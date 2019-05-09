@@ -1,0 +1,31 @@
+body {
+    background-image: url("../img/baground.jpg");
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+}
+.table {
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 330px;
+    height: 330px;
+    text-align: center;
+    background: transparent;
+    margin: auto;
+}
+.top_row {
+    background-color: green;
+    opacity: 0.6;
+    color: white;
+    border-right: gray solid 2px;
+    border-bottom: gray solid 4px;
+}
+.basic_table {
+    color: gray;
+    border-right: gray solid 2px;
+    border-bottom: gray solid 4px;
+}
+.white_table {
+    color: blue;
+    background: white;
+    border-bottom: gray solid 4px;
+}
