@@ -24,6 +24,7 @@ p {
 .menu1 {
     color: black;
     font-size: 30px;
+    text-decoration: none;
 }
 .table1 {
     border-collapse: collapse;
