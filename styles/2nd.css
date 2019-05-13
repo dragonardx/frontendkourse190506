@@ -9,12 +9,10 @@ body {
     width: 330px;
     height: 330px;
     text-align: center;
-    background: transparent;
     margin: auto;
 }
 .top_row {
-    background-color: green;
-    opacity: 0.6;
+    background-color: #0080008c;
     color: white;
     border-right: gray solid 2px;
     border-bottom: gray solid 4px;
