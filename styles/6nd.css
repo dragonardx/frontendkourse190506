@@ -1,5 +1,5 @@
 .grids1 {
-    width: 100%;
+    width:  calc(100% - 20px);
     height: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto;
