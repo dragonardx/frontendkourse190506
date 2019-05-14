@@ -1,0 +1,11 @@
+.table1 {
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    width: calc(100%/3*2);
+}
+td, tr {
+    border: black solid 1px;
+    table-layout: fixed;
+    width: 20%;
+}
