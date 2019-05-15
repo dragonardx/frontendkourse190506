@@ -1,0 +1,114 @@
+body html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: #f2e1e1;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+    opacity: 0.75;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: gray;
+}
+.menu {
+    position: fixed;
+    bottom: 0;
+}
+img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(50%);
+}
+header > div {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 4px;
+}
+.img_center {
+    position: relative;
+}
+.img_text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 4px;
+}
+.botdiv{
+    width: 50%;
+    color: black;
+    float: left;
+    text-align: center;
+}
+.botdiv2 {
+    background: #fdd;
+    width: 100%;
+    color: black;
+    float: left;
+    text-align: center;
+}
+footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    float: left;
+    background: black;
+    padding-top: 15px;
+    padding-bot: 15px;
+    box-sizing: border-box;
+}
+.p {
+    text-align: left;
+}
+.center {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    color: gray;
+}
+.hide {
+    padding-top: 50px;
+    width: 100%;
+    background: white;
+    float: left;
+}
