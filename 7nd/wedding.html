@@ -6,80 +6,92 @@
     <link rel="stylesheet" href="wedding.css">
 </head>
 <body>
-<header>
-    <img src="wedding_couple.jpg" alt="Header">
-    <div class="img_text">
-        <h1>Jane & John</h1>
+<header id="home">
+    <div class="letter">
+        <h1 class="big_text">Jane & John</h1>
         <h2>Are getting married</h2>
         <h2>17.07.2019</h2>
     </div>
 </header>
-<div>
-    <div class="menu">
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Jane & John</a>
-            </li>
-            <li>
-                <a href="#">Wedding</a>
-            </li>
-            <li>
-                <a href="#">RSVP</a>
-            </li>
-        </ul>
+<nav>
+    <ul>
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#jane_john">Jane & John</a>
+        </li>
+        <li>
+            <a href="#wedding">Wedding</a>
+        </li>
+        <li>
+            <a id="nav_button" href="#rsvp">RSVP</a>
+        </li>
+    </ul>
+</nav>
+<div id="jane_john">
+    <div class="text_div">
+        <h1>
+            <b>Jane & John</b>
+        </h1>
+        <img src="wedding_couple2.jpg" alt="Couple 2">
+        <p>
+            <i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur
+                adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam,
+                quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</i>
+        </p>
+        <p class="p_different">
+            <a class="button" href="#wedding">Wedding Details</a>
+        </p>
     </div>
 </div>
-<div class="center">
-    <h1>Jane & John</h1>
-    <img src="wedding_couple2.jpg" alt="Couple 2">
-    <p class="p">You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a>
-        <button>Wedding Details</button>
-    </a>
-</div>
-<div class="img_center">
-    <img src="flowers.jpg" alt="Flowers">
-    <div class="img_text">
-        <h1>You Are Invited</h1>
+<div id="flowers">
+    <div class="letter">
+        <h1 class="big_text">You Are Invited</h1>
         <br>
         <h2>Of course...</h2>
     </div>
 </div>
-<div class="center">
-    <h1>THE WEDDING</h1>
-    <img src="wedding_location.jpg" alt="Wedding location">
-    <div>
-        <div class="botdiv">
-            <h2>When</h2>
-            <p>Wedding Ceremony - 2:00pm</p>
-            <p>Reception & Dinner - 5:00pm</p>
-        </div>
-        <div class="botdiv">
-            <h2>Where</h2>
-            <p>Some place, an address</p>
-            <p>Some where, some address</p>
+<div id="wedding">
+    <div class="text_div">
+        <h1>
+            <b>THE WEDDING</b>
+        </h1>
+        <img src="wedding_location.jpg" alt="Wedding location">
+        <div>
+            <div class="floats">
+                <h2>When</h2>
+                <p class="text_center">Wedding Ceremony - 2:00pm</p>
+                <p class="text_center">Reception & Dinner - 5:00pm</p>
+            </div>
+            <div class="floats">
+                <h2>Where</h2>
+                <p class="text_center">Some place, an address</p>
+                <p class="text_center">Some where, some address</p>
+            </div>
         </div>
     </div>
 </div>
-<div class="botdiv2">
+<div id="bot_element">
     <h1>HOPE YOU CAN MAKE IT!</h1>
-    <p>Kindly Respond By January, 2017</p>
-    <button>RSVP</button>
+    <p class="p_different"> Kindly Respond By January, 2017</p>
+    <p class="p_different">
+        <button id="rsvp">RSVP</button>
+    </p>
 </div>
 <footer>
     <div>
-        <h2>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></h2>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
     </div>
 </footer>
-<div class="hide"></div>
+<div id="hide"></div>
 </body>
 </html>
