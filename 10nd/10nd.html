@@ -7,59 +7,55 @@
 </head>
 <body>
 <div>
-    <div>
-        <form>
-            <b>Title</b>
-            <input type="text" list="title" placeholder="Select one of enter your own" required/>
-            <datalist id="title">
-                <option>Box</option>
-                <option>Cylinder</option>
-                <option>Oval</option>
-                <option>Square</option>
-            </datalist>
-            <br>
-            <b>Name</b>
-            <input type="text" name="name" placeholder="John Doe" required>
-            <br>
-            <b>Phone number</b>
-            <input type="tel" name="phone" pattern="[+][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
-                   placeholder="+1 23456789"> (optional)
-            <br>
-            <b>Email address</b>
-            <input type="email" name="email" value="add@sdaad" required>
-            <br>
-            <b>Your website</b>
-            <input type="url" name="url" placeholder="www.yoursite.com"> (optional)
-            <br>
-            <b>Nr. of items to order</b>
-            <input type="number" name="number" value="6" min="1" max="10"> (1-10)
-            <br>
-            <b>Length</b>
-            <input type="range" name="range" value="1" min="1" max="10"> 1m (in 10cm increments)
-            <br>
-            <b>Delivery date</b>
-            <input type="date" name="date" value="275760-08-27" min="2010-12-16"> (minimum 16 December 2010)
-            <br>
-            <b>Time of delivery</b>
-            <input type="time" name="time" step="1800"> (in 30 min increments)
-            <br>
-            <b>Color of the item</b>
-            <input type="color" name="color" value="#ea4335"> (default red)
-            <br>
-            <button>
-                <a href="#">Submit</a>
-            </button>
-        </form>
-    </div>
-    <div>
-        <form action="#">
-            Search
-            <input type="search" name="go">
-            <button>
-                <a href="#">Go</a>
-            </button>
-        </form>
-    </div>
+    <form>
+        <b>Title</b>
+        <input type="text" list="title" placeholder="Select one of enter your own" required/>
+        <datalist id="title">
+            <option>Box</option>
+            <option>Cylinder</option>
+            <option>Oval</option>
+            <option>Square</option>
+        </datalist>
+        <br>
+        <b>Name</b>
+        <input type="text" name="name" placeholder="John Doe" required>
+        <br>
+        <b>Phone number</b>
+        <input type="tel" name="phone" pattern="[+][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
+               placeholder="+1 23456789"> (optional)
+        <br>
+        <b>Email address</b>
+        <input type="email" name="email" value="add@sdaad" required>
+        <br>
+        <b>Your website</b>
+        <input type="url" name="url" placeholder="www.yoursite.com"> (optional)
+        <br>
+        <b>Nr. of items to order</b>
+        <input type="number" name="number" value="6" min="1" max="10"> (1-10)
+        <br>
+        <b>Length</b>
+        <input type="range" name="range" value="1" min="1" max="10"> 1m (in 10cm increments)
+        <br>
+        <b>Delivery date</b>
+        <input type="date" name="date" value="275760-08-27" min="2010-12-16"> (minimum 16 December 2010)
+        <br>
+        <b>Time of delivery</b>
+        <input type="time" name="time" step="1800"> (in 30 min increments)
+        <br>
+        <b>Color of the item</b>
+        <input type="color" name="color" value="#ea4335"> (default red)
+        <br>
+        <button>
+            <a href="#">Submit</a>
+        </button>
+    </form>
+    <form action="#">
+        <b>Search</b>
+        <input type="search" name="go">
+        <button>
+            <a href="#">Go</a>
+        </button>
+    </form>
 </div>
 </body>
 </html>
