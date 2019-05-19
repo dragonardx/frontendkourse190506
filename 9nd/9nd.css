@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: black;
+}
+* {
+    overflow: hidden;
+    box-sizing: border-box;
+    border: none;
+}
+body > div {
+    position: absolute;
+    width: 40%;
+    background: #f2f2f2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    width: 100%;
+}
+form {
+    width: 100%;
+}
+form div {
+    width: 50%;
+    float: left;
+}
+div input {
+    border-radius: 4px;
+    width: 100%;
+    margin: 6px 0;
+    padding: 5px;
+}
+textarea {
+    border-radius: 4px;
+    resize: none;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 5px;
+}
+button {
+    background: red;
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 0;
+}
