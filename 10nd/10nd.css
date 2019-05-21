@@ -6,6 +6,7 @@ body, html {
 }
 body {
     background: #2e2e2e;
+    display: block;
 }
 * {
     box-sizing: border-box;
