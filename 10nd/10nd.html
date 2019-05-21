@@ -9,7 +9,7 @@
 <div>
     <form>
         <b>Title</b>
-        <input type="text" list="title" placeholder="Select one of enter your own" required/>
+        <input type="text" name="text" list="title" placeholder="Select one of enter your own" required/>
         <datalist id="title">
             <option>Box</option>
             <option>Cylinder</option>
@@ -31,7 +31,7 @@
         <input type="url" name="url" placeholder="www.yoursite.com"> (optional)
         <br>
         <b>Nr. of items to order</b>
-        <input type="number" name="number" value="6" min="1" max="10"> (1-10)
+        <input type="number" name="number" value="6" min="1" max="10" step="1"> (1-10)
         <br>
         <b>Length</b>
         <input type="range" name="range" value="1" min="1" max="10"> 1m (in 10cm increments)
