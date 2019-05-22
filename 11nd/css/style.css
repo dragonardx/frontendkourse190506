@@ -1,0 +1,14 @@
+body {
+  background: blue; }
+
+h1 {
+  font-size: 50px; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    border: black solid 1px; }
+    ul li a {
+      color: green; }
+      ul li a span {
+        font-weight: bold; }

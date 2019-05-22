@@ -1,0 +1,19 @@
+$variable: blue;
+
+body {
+  background: $variable;
+}
+@import "page";
+
+ul {
+  list-style-type: none;
+  li {
+    border: black solid 1px;
+    a {
+      color: green;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
