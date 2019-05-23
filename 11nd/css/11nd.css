@@ -39,11 +39,18 @@ header button:hover{
     background: grey;
     color: #000;
 }
-.button{
+#button{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#button a {
+    font-style: inherit;
+    color: white;
+    text-decoration: none;
+    font-size: 56px;
+    padding: 10px;
 }
 header h2{
     position: absolute;
@@ -54,7 +61,7 @@ header h2{
     color: white;
     padding: 5px;
 }
-.menu{
+#menu{
     background: #000;
     width: 100%;
     padding: 50px 20px;
@@ -130,7 +137,7 @@ hr{
     border-radius: 4px;
     padding: 5px;
 }
-.about{
+#about{
     background: #8b5f5b;
     width: 100%;
     padding: 64px 16px;
@@ -142,13 +149,13 @@ hr{
     margin-right: auto;
     overflow: hidden;
 }
-.about h1{
+#about h1{
     color: white;
     text-align: center;
     font-size: 64px;
     margin: 10px 0 64px 0;
 }
-.about p{
+#about p{
     color: white;
     font-size: 24px;
     margin: 24px 0;
@@ -232,7 +239,7 @@ body > nav {
     position: fixed;
     top: 0;
     z-index: 1;
-    visibility: hidden;
+    display: none;
 }
 #nav {
     font: inherit;
@@ -258,8 +265,8 @@ body > nav:hover {
 #nav li:hover {
     background: gray;
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     body > nav {
-        visibility: visible;
+        display: block;
     }
 }
