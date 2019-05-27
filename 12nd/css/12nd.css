@@ -1,3 +1,15 @@
 .container {
     max-width: 960px !important;
 }
+#categories {
+    width: 100%;
+}
+#categories li {
+    border-bottom: dotted 1px #6c757d;
+    padding-bottom: 2px;
+    list-style-image: url("../img/orange_file.gif");
+}
+h5 {
+    width: 100%;
+    border-bottom: #6c757d solid 1px;
+}
