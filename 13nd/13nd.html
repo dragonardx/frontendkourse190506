@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="css/13nd.css">
 </head>
 <body>
-<form>
+<form id="form">
     <input type="number" id="x" placeholder="x" oninput="inputx()"/><br>
     <input type="number" id="y" placeholder="y" oninput="inputy()"/><br>
-    <button type="button" onClick="perimeter()"/>Perimeter</button>
-    <button type="button" onClick="area()"/>Area</button>
-    <button type="button" onClick="diagonal()"/>Diagonal</button>
+    <button type="submit" onClick="perimeter()"/>Perimeter</button>
+    <button type="submit" onClick="area()"/>Area</button>
+    <button type="submit" onClick="diagonal()"/>Diagonal</button>
     <p>
         <span id="x_r"></span>
     </p>
@@ -25,6 +25,10 @@
     </p>
 </form>
 <script>
+    document.getElementById('form').addEventListener("submit", function (event) {
+        event.preventDefault();
+        return false
+    } );
     function inputx() {
         var z = document.getElementById("x").value;
         document.getElementById("x_r").innerHTML = "You wrote x: " + z;
@@ -36,20 +40,20 @@
     function perimeter() {
         num1 = parseInt(document.getElementById("x").value);
         num2 = parseInt(document.getElementById("y").value);
-        z = 2 * (num1 + num2);
+        var z = 2 * (num1 + num2);
         document.getElementById("result").innerHTML = z;
     }
 
     function area() {
         num1 = parseInt(document.getElementById("x").value);
         num2 = parseInt(document.getElementById("y").value);
-        z = num1 * num2;
+        var z = num1 * num2;
         document.getElementById("result").innerHTML = z;
     }
     function diagonal() {
         num1 = parseInt(document.getElementById("x").value);
         num2 = parseInt(document.getElementById("y").value);
-        z = Math.sqrt(num1 * num1 + num2 * num2);
+        var z = Math.sqrt(num1 * num1 + num2 * num2);
         document.getElementById("result").innerHTML = z;
     }
 </script>
