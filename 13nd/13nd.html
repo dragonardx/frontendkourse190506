@@ -7,16 +7,32 @@
 </head>
 <body>
 <form>
-    <input type="number" id="x" placeholder="x"/><br>
-    <input type="number" id="y" placeholder="y"/><br>
+    <input type="number" id="x" placeholder="x" oninput="inputx()"/><br>
+    <input type="number" id="y" placeholder="y" oninput="inputy()"/><br>
     <button type="button" onClick="perimeter()"/>Perimeter</button>
     <button type="button" onClick="area()"/>Area</button>
     <button type="button" onClick="diagonal()"/>Diagonal</button>
+    <p>
+        <span id="x_r"></span>
+    </p>
+
+    <p>
+        <span id="y_r"></span>
+    </p>
+
     <p>The Result is : <br>
         <span id="result"></span>
     </p>
 </form>
 <script>
+    function inputx() {
+        var z = document.getElementById("x").value;
+        document.getElementById("x_r").innerHTML = "You wrote x: " + z;
+    }
+    function inputy() {
+        var z = document.getElementById("y").value;
+        document.getElementById("y_r").innerHTML = "You wrote y: " + z;
+    }
     function perimeter() {
         num1 = parseInt(document.getElementById("x").value);
         num2 = parseInt(document.getElementById("y").value);
