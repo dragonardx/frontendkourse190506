@@ -1,4 +1,11 @@
-
+/** Turime masyvą, kurio kiekvienas elementas yra masyvas iš keturių elementų: a) data kaip tekstinė eilutė,
+ * pvz: '2017-07-06 19:59:45' b) automobilio numeris, pvz.: 'LRS123' c) automobilio nuvažiuotas kelias metrais d)
+ * automobilio sugaištas laikas sekundėmis Išveskite visus automobilius į html lentelę kartu su suskaičiuotu automobilio greičiu kilometrais per valandą. **/
+var arr = [
+    ["2017-07-01 14:59:45", "LRS123", "2000", "120"],
+    ["2017-07-02 15:59:45", "LRS123", "1000", "120"],
+    ["2017-07-03 16:59:45", "LRS123", "15000", "1200"],
+    ["2017-07-04 17:59:45", "LRS150", "1020", "135"],];
 var html = "";
 for (var i = 0; i < arr.length; i++) {
     var item = arr[i];
