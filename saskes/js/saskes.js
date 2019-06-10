@@ -1,13 +1,6 @@
-var board = [
-    [-1, 1, -1, 1, -1, 1, -1, 1],
-    [1, -1, 1, -1, 1, -1, 1, -1],
-    [-1, 1, -1, 1, -1, 1, -1, 1],
-    [0, -1, 0, -1, 0, -1, 0, -1],
-    [-1, 0, -1, 0, -1, 0, -1, 0],
-    [2, -1, 2, -1, 2, -1, 2, -1],
-    [-1, 2, -1, 2, -1, 2, -1, 2],
-    [2, -1, 2, -1, 2, -1, 2, -1]
-];
+
+var PLAYER_1 = 1;
+var PLAYER_2 = 2;
 var players = {
     PLAYER_1: {
         figure1: {name: 'figure1', status: 0, playerId: PLAYER_1,},
@@ -38,15 +31,32 @@ var players = {
         figure12: {name: 'figure24', status: 0, playerId: PLAYER_2,},
     }
 };
-function allowDrop(e) {
-    e.preventDefault();
-}
 
-function drag(e) {
-    e.dataTransfer.setData("text", e.target.id);
+var blackBox = document.getElementsByClassName('black_box');
+for (var i = 0; i < blackBox.length; i++) {
+    var elm = blackBox[i];
+
+    elm.addEventListener('dragover', function (e) {
+        allowDrop(e, this.getAttribute('id'));
+    });
+
+    elm.addEventListener('drop', function (e) {
+        drop(e);
+    });
 }
+function dragStar(e) {
+    dragStar.preventDefault();
+    document.getElementById(e)
+}
+function isdropAlowed() {
+    
+}
+var isdropAlowed = false;
 function drop(e) {
-    e.preventDefault();
-    var data = e.dataTransfer.getData("text");
+    drop.preventDefault();
+    if (!isdropAlowed) {
+        return false;
+    }
+    var data = e.dataTransfer.getData('text');
     e.target.appendChild(document.getElementById(data));
-}
+    }
