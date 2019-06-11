@@ -1,43 +1,64 @@
 "use strict";
-var account = [{}];
+var accouns = [];
+
 function createAccount() {
     var accName = document.getElementById('create_id').value;
-    var accPassword =  document.getElementById('create_password').value;
-    for (var i = 0; i <account.length; i++) {
-        if (accName === account[i].username) {
+    var accPassword = document.getElementById('create_password').value;
+    if (accName < 4 || accPassword < 4) {
+        alert('Need to write atleast 4 symbols');
+        return false;
+    }
+    for (var i = 0; i < accouns.length; i++) {
+        if (accName === accouns[i].username) {
             alert('same id');
-           return false
+            return false
         }
     }
-    account.push({username: accName, password: accPassword});
-    console.log(account);
+    accouns.push({username: accName, password: accPassword});
+    console.log(accouns);
 }
+
 function changePassword() {
     var isIdAvailable = document.getElementById('change_id').value;
-    var your_password =  document.getElementById('your_password').value;
-    var your_password2 =  document.getElementById('your_password2').value;
-    var new_password2 =  document.getElementById('new_password').value;
-    if (!accountMatch(isIdAvailable,your_password)) {
+    var your_password = document.getElementById('your_password').value;
+    var new_password = document.getElementById('new_password').value;
+    var new_password2 = document.getElementById('new_password2').value;
+    if (isIdAvailable < 4 && your_password < 4 && new_password && new_password2) {
+        alert('Need 4 write atleast 4 symbols');
+        return false;
+    }
+    if (new_password < 4 || new_password2 < 4) {
+        alert('Need to write atleast 4 symbols');
+        return false;
+    }
+    if (!accountMatch(isIdAvailable, your_password)) {
         alert('account or password wrong');
         return false;
-    }
-    if (!passwordsMatch(your_password, your_password2)) {
+    } else if (!passwordsMatch(new_password, new_password2)) {
         alert('passwords dont match');
         return false;
+    } else {
+        acc.password = new_password;
+        alert('Password Changed');
     }
-        account.push({ password: new_password2});
-        alert('password changed');
-        console.log(account);
+    console.log(accouns);
 }
+
+var acc = null;
+
 function accountMatch(a, b) {
-    for (let i = 0; i < account.length; i++) {
-        if (a !== account[i].username || b !== account[i].password) {
+    for (var i = 0; i < accouns.length; i++) {
+        acc = accouns[i];
+        if (a !== accouns[i].username || b !== accouns[i].password) {
             return false;
         }
+        return acc;
     }
 }
-function passwordsMatch(a, b) {
-    if (a !== b) {
+
+function passwordsMatch(new_password, new_password2) {
+    if (new_password !== new_password2) {
         return false;
     }
+    return true;
 }
