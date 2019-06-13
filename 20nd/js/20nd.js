@@ -43,6 +43,7 @@ function generateTable() {
     }
     document.getElementById('table').getElementsByTagName('tbody')[0].innerHTML = html;
     addEventListeners();
+    console.log(carsArr);
 }
 
 function addEventListeners() {
@@ -79,14 +80,14 @@ function findMyCarItem(id) {
     return carItem;
 }
 function handleDelete(id, elm) {
+    var carItem = findMyCarItem(id);
     if (confirm('Do you want to remove this?')) {
         let p = elm.parentNode.parentNode;
         p.parentNode.removeChild(p);
-        carsArr.splice(a);
+        carsArr.splice(carItem);
         console.log(carsArr);
     }
 }
 function handleChange(id) {
-    var carItem = findMyCarItem(id);
-    let a = carsArr.indexOf(carItem);
+
 }
